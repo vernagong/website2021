@@ -1255,6 +1255,7 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
 
 .reset-anchor:hover, .reset-anchor:focus {
   text-decoration: none;
+    color: #ff6600;
 }
 
 .reset-anchor-inherit {

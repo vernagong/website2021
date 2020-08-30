@@ -1408,6 +1408,8 @@ STYLE SWITCHER FOR DEMO
  */
 .navbar {
   padding: 0.5rem 1rem;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-brand {
@@ -2260,11 +2262,11 @@ mark,
 }
 
 .text-primary {
-  color: #FF6600 !important;
+  color: #FFF;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #1d3cf6 !important;
+  color: #FF6600;
 }
 
 /*

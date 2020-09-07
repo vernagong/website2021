@@ -278,6 +278,124 @@ section.hero-home > .container::after {
 * ==========================================
 *
 */
+
+.pt-6{
+    padding-top: 160px;
+}
+
+.pt-7{
+    padding-top: 80px;
+}
+
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #EDEDED;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+ul.timeline:after {
+  content: ' ';
+  background: #FF6600;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  z-index: 400;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+
+
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: #FF6600;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #EFEFEF;
+  z-index: 400;
+}
+
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  background: #fff;
+  position: relative;
+  transition: all 0.4s;
+  border-radius: 0.25rem;
+}
+
+.contact-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 0.25rem;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.contact-item i {
+  color: #FF6600;
+  transition: all 0.3s;
+}
+
+.contact-item:hover {
+  background: #FF6600;
+  color: #fff;
+}
+
+.contact-item:hover i, .contact-item:hover .contact-item-title, .contact-item:hover p {
+  color: #fff;
+}
+
+.contact-item:hover::before {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+a.contact-item .contact-item-title, a.contact-item p {
+  transition: all 0.3s;
+}
+
 .categories-item {
   position: relative;
   transition: all 0.2s;
@@ -291,7 +409,7 @@ section.hero-home > .container::after {
   bottom: 0;
   right: 0;
   display: block;
-  background: linear-gradient(45deg, #FF6600, #614ef8);
+  background: linear-gradient(45deg, #FF6600, #f9d423);
   transition: all 0.3s;
   border-radius: 0.25rem;
   opacity: 0;
@@ -1233,6 +1351,7 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
 
 .bg-cover {
   background-size: cover !important;
+    
 }
 
 .bg-center {

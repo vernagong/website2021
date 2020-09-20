@@ -18,20 +18,9 @@ section {
 }
 
 @media (min-width: 992px) {
-  section.hero {
+section.hero {
     height: 25rem;
   }
-}
-
-section.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #000;
-  opacity: 0.4;
 }
 
 section.hero-home::before {
@@ -39,7 +28,7 @@ section.hero-home::before {
   display: block;
   background: #f5f6f8;
   width: 50%;
-  height: calc(100% + 12rem);
+  height: calc(100% + 1rem);
   position: absolute;
   top: 0;
   right: 0;
@@ -70,24 +59,29 @@ section.hero-home > .container::before {
   background: url(../img/triangle.svg) no-repeat;
   background-size: 100%;
   position: absolute;
-  top: 6rem;
+  top: 2rem;
   right: 0;
   opacity: 0.03;
-  z-index: 1;
 }
 
-section.hero-home > .container::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 60px;
-  background: url(../img/circle.svg) no-repeat;
-  background-size: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 1rem;
-  opacity: 0.03;
-  z-index: -1;
+.icon-block {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background: rgba(255, 102, 0, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FF6600;
+  font-size: 0.9rem;
+}
+
+.icon-block-lg {
+  width: 80px;
+  height: 80px;
 }
 
 .tooltip-inner {
@@ -287,6 +281,9 @@ section.hero-home > .container::after {
     padding-top: 80px;
 }
 
+.pt-8{
+    padding-top: 120px;
+}
 
 /* Timeline holder */
 ul.timeline {
@@ -1019,6 +1016,73 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
 .badge-dark-light {
   color: #343a40;
   background-color: #e7e7e8;
+}
+
+.with-pattern {
+  position: relative;
+}
+
+.with-pattern::before {
+  content: '';
+  display: block;
+  width: 40vw;
+  padding-bottom: 15%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/pattern.svg) repeat;
+  background-size: 20rem;
+  background-position: top left;
+  opacity: 0.07;
+}
+
+.with-pattern-full {
+  position: relative;
+  overflow: hidden;
+}
+
+.with-pattern-full::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/pattern.svg) repeat;
+  background-size: 20rem;
+  background-position: top left;
+  opacity: 0.04;
+}
+
+.img-gradient {
+  position: relative;
+  z-index: 99;
+}
+
+.img-gradient::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 30%;
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  background: linear-gradient(45deg, #FF6600, #FF8800);
+  border-radius: 0.25rem;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.img-gradient-left::before, .img-gradient-right::before {
+  width: 70%;
+  height: 70%;
+  padding-bottom: 0;
+}
+
+.img-gradient-right::before {
+  left: auto;
+  right: -2rem;
 }
 
 /*

@@ -84,6 +84,21 @@ section.hero-home > .container::before {
   height: 80px;
 }
 
+.icon-block-2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background: rgba(0, 200, 197, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #00C8C5;
+  font-size: 0.9rem;
+}
+
 .tooltip-inner {
   background-color: #FF6600;
   font-family: "Work Sans", sans-serif;
@@ -2450,6 +2465,14 @@ mark,
 
 a.text-primary:hover, a.text-primary:focus {
   color: #FF6600;
+}
+
+.text-primary-2 {
+  color: #00C8C5;
+}
+
+a.text-primary-2:hover, a.text-primary-2:focus {
+  color: #02E6DB;
 }
 
 /*

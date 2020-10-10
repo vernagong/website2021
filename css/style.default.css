@@ -99,6 +99,51 @@ section.hero-home > .container::before {
   font-size: 0.9rem;
 }
 
+.icon-block-3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background: rgba(0, 85, 255, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #0055ff;
+  font-size: 0.9rem;
+}
+
+.icon-block-4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background: rgba(34, 34, 34, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #222;
+  font-size: 0.9rem;
+}
+
+.icon-block-5 {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background: rgba(48, 87, 213, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #3057D5;
+  font-size: 0.9rem;
+}
+
 .tooltip-inner {
   background-color: #FF6600;
   font-family: "Work Sans", sans-serif;
@@ -2473,6 +2518,30 @@ a.text-primary:hover, a.text-primary:focus {
 
 a.text-primary-2:hover, a.text-primary-2:focus {
   color: #02E6DB;
+}
+
+.text-primary-3 {
+  color: #0055ff;
+}
+
+a.text-primary-3:hover, a.text-primary-2:focus {
+  color: #004eea;
+}
+
+.text-primary-4 {
+  color: #5c19db;
+}
+
+a.text-primary-4:hover, a.text-primary-2:focus {
+  color: #7c1dfd;
+}
+
+.text-primary-5 {
+  color: #3057D5;
+}
+
+a.text-primary-5:hover, a.text-primary-2:focus {
+  color: #2045bf;
 }
 
 /*
